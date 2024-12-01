@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --primary-color:     /* Main theme color */
+    --secondary-color:  /* Accent color */
+    --background-color: /* Background color */
+    --text-color: ; /* Default text color */
+    --heading-font:  /* Font for headings */
+    --body-font:  /* Font for body text */
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color); /* Primary color for headings */
+    font-family: var(--heading-font);
+}
+
+/* Paragraph and Text Styles */
+p, b{
+    color: var(--text-color);
+    font-family: var(--body-font);
+}
+
+
+/****************************************************************************************/
+/****************************************************************************************/
+/*************************افكار عامه لتصميم - قابله لتعديل ***************************/
+/****************************************************************************************/
+/****************************************************************************************/
+/* Container for Layout */
+.container {
+    /*  need a max-width */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Flex Utilities */
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+/* Grid Utilities */
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+
+
+/****************************************************************************************/
+/****************************************************************************************/
+/********************************Responsive Design **************************************/
+/****************************************************************************************/
+/****************************************************************************************/
+
+
+/* Responsive Design for tablet */
+@media (max-width: 768px) {
+   
+}
+
+/* Responsive Design for phone */
+@media (max-width: 480px) {
+
+}
