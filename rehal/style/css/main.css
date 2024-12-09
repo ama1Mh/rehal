@@ -350,6 +350,191 @@
     margin-top: 30px;
   }
   
+
+/*************************************************************/
+/*************************************************************/
+/*************************************************************/
+/*************************************************************/
+/* Gallery Section */
+#gallery {
+    padding: 60px 5%;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  #gallery h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #gallery p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+  
+  /* Gallery Grid */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for desktop */
+    gap: 20px; /* Space between items */
+    margin-top: 20px;
+  }
+  
+  /* Gallery Item */
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1); 
+    filter: brightness(0.8); 
+  }
+
+  
+  /*************************************************************/
+  /*************************************************************/
+  /*************************************************************/
+  /*************************************************************/
+
+/* Footer Container */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    color: #2f2f2f;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e5e5e5;
+    text-align: left;
+  }
+  
+  .footer > * {
+    flex: 1 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer Contact Section */
+  .footer-contact {
+    flex: 1 0 300px; /* Ensure a consistent width for the contact section */
+    margin-right: 20px;
+  }
+  
+  .footer-logo {
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer-contact h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .footer-contact address {
+    font-style: normal;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .footer-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(33, 33, 33, 0.07);
+    border-radius: 30px;
+    color: #333;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  .footer-button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Footer Navigation Section */
+  .footer-navigation {
+    flex: 2 0 600px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .footer-nav-item {
+    flex: 1 0 200px; /* Maintain consistent item width */
+    margin-bottom: 10px;
+  }
+  
+  .footer-nav-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .footer-submenu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-submenu li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-submenu a {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .footer-submenu a:hover {
+    color: #333;
+  }
+  
+  /* Legal Section */
+  .footer-legal {
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666;
+    font-size: 0.9rem;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 10px;
+  }
+  
+  .footer-heart {
+    color: #e63946;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .footer-navigation {
+      flex-direction: column;
+    }
+  
+    .footer-nav-item {
+      flex: 1 0 100%;
+    }
+  
+    .footer-legal {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+    }
+  }
+  
   /*************************************************************/
   /*************************************************************/
   /*************************************************************/
@@ -397,6 +582,26 @@
     
       .timeline-item {
         margin: 20px 0;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr); 
+      }
+
+      .footer-legal-links {
+        margin-left: auto;
+      }
+    
+      .footer-navigation > * {
+        flex: 1;
+      }
+    
+      .footer-contact {
+        flex: 1 0;
+      }
+    
+      .footer-navigation {
+        flex: 2 0;
       }
   }
   
