@@ -1,9 +1,9 @@
 
 nav {
     display: flex;
-    align-items: center; /* Vertically centers all items */
-    justify-content: space-between; /* Spreads the content evenly */
-    padding: 10px 5%;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 15px 5%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
                 rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     z-index: 111;
@@ -13,11 +13,11 @@ nav {
   
   nav .logo {
     display: flex;
-    align-items: center; /* Aligns logo image and text vertically */
+    align-items: center; 
   }
   
   nav .logo img {
-    height: 30px; /* Slightly larger for better visibility */
+    height: 30px;
     margin-right: 10px;
   }
   
