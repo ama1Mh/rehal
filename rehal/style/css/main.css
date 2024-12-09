@@ -33,6 +33,65 @@ p, b{
     font-family: var(--body-font);
 }
 
+/****************************************************************************************/
+/****************************************************************************************/
+/********************************features section **************************************/
+/****************************************************************************************/
+/****************************************************************************************/
+
+#features {
+    padding: 60px 5%;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  #features h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #features p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+  
+  /* Features Grid */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for desktop */
+    gap: 20px; /* Space between items */
+  }
+  
+  .textBox {
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+                rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .textBox:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(50, 50, 93, 0.3) 0px 4px 10px -1px,
+                rgba(0, 0, 0, 0.4) 0px 3px 6px -1px;
+  }
+  
+  .textBox h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .textBox p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
 
 /****************************************************************************************/
 /****************************************************************************************/
@@ -162,6 +221,10 @@ p, b{
     .banner-item {
       width: 100%; /* Make banner items full-width on small screens */
     }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+      }
   }
   
 
