@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rehal</title>
+    <link rel="stylesheet" href="/rehal/style/css/main.css">
+    <link rel="stylesheet" href="/rehal/style/css/menu.css">
+    <link rel="stylesheet" href="/rehal/style/css/profile.css">
+
+</head>
+<body>
+    <!-- header -- menue-->
+    <header>
+
+            <nav>
+                <div class="logo">
+                  <img src="/rehal/images/logo.jpg" alt="logo" />
+                  <h1>Rihal</h1>
+                </div>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#logout">Logout</a></li>
+                </ul>
+                    <!-- نحتاج علامة افضل-->
+                <div class="hamburger">
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <span class="line"></span>
+                </div>
+              </nav>
+              <div class="menubar">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#logout">Logout</a></li>
+                </ul>
+              </div>
+
+    </header>
+    <section class="main">
+
+  <!-- Main Layout -->
+  <div class="main-container">
+    <!-- Left Sidebar -->
+    <div class="sidebar">
+      <h3>Settings</h3>
+      <ul class="settings-links">
+        <li><a href="#about" onclick="showTab('about-tab')">About</a></li>
+        <li><a href="#edit" onclick="showTab('edit-tab')">Edit Profile</a></li>
+        <li><a href="#security" onclick="showTab('security-tab')">Security</a></li>
+        <li><a href="#logout" onclick="showTab('logout-tab')">Exit</a></li>
+      </ul>
+    </div>
+
+    <!-- Right Profile Section -->
+    <div class="profile-container">
+      <!-- Profile Header -->
+      <div class="profile-header">
+        <div class="profile-picture">
+          <img src="https://via.placeholder.com/150" alt="Profile Picture">
+          <button class="btn-change-photo">Change Photo</button>
+        </div>
+        <div class="profile-info">
+          <h1>John Doe</h1>
+          <p>ID: 123456</p>
+          <p>Region: Jazar</p>
+        </div>
+      </div>
+
+      <!-- Tabs Content -->
+      <div class="tabs-content">
+        <!-- About Tab -->
+        <div id="about-tab" class="tab-pane active">
+          <h2>About</h2>
+          <p>Name: John Doe</p>
+          <p>Email: john.doe@example.com</p>
+          <p>Phone: 123-456-7890</p>
+          <p>Address: Jazar Region</p>
+        </div>
+
+        <!-- Edit Profile Tab -->
+        <div id="edit-tab" class="tab-pane">
+          <h2>Edit Profile</h2>
+          <p>Edit your profile details here.</p>
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" value="John Doe">
+            <label for="email">Email</label>
+            <input type="email" id="email" value="john.doe@example.com">
+            <button type="submit">Save Changes</button>
+          </form>
+        </div>
+
+        <!-- Security Tab -->
+        <div id="security-tab" class="tab-pane">
+          <h2>Security</h2>
+          <p>Update your password and security preferences here.</p>
+          <form>
+            <label for="password">New Password</label>
+            <input type="password" id="password">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password">
+            <button type="submit">Update Password</button>
+          </form>
+        </div>
+
+        <!-- Logout Tab -->
+        <div id="logout-tab" class="tab-pane">
+          <h2>Exit</h2>
+          <p>You can log out or return to the homepage.</p>
+          <button class="btn-logout">Log Out</button>
+          <button class="btn-home">Return to Homepage</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </section>
+
+    
+  <footer class="footer">
+    <div class="footer-contact">
+      <h1 class="footer-logo">Something</h1>
+          
+      <h2>Contact Us</h2>
+      <address>
+        5534 Somewhere In The World, 22193-10212<br>
+        <a class="footer-button" href="mailto:example@gmail.com">Email Us</a>
+      </address>
+    </div>
+    
+    <ul class="footer-navigation">
+      <li class="footer-nav-item">
+        <h2 class="footer-nav-title">Media</h2>
+        <ul class="footer-submenu">
+          <li><a href="#">feature</a></li>
+          <li><a href="#">feature</a></li>
+          <li><a href="#">feature</a></li>
+        </ul>
+      </li>
+      
+      <li class="footer-nav-item footer-nav-item--large">
+        <h2 class="footer-nav-title">feature</h2>
+        <ul class="footer-submenu footer-submenu--columns">
+          <li><a href="#">feature 1</a></li>
+          <li><a href="#">feature 2</a></li>
+          <li><a href="#">feature 3</a></li>
+
+        </ul>
+      </li>
+      
+      <li class="footer-nav-item">
+        <h2 class="footer-nav-title">Legal</h2>
+        <ul class="footer-submenu">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </li>
+    </ul>
+    
+    <div class="footer-legal">
+      <p>&copy; 2025 All rights reserved.</p>
+      <div class="footer-legal-links">
+        <span>Made with <span class="footer-heart">♥</span> remotely from jazan</span>
+      </div>
+    </div>
+  </footer>
+  
+ 
+    <script src="/rehal/style/js/script.js"></script>
+</body>
+</html>
